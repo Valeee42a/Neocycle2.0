@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoCycle | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="menu-icon" onclick="toggleNav(250)">☰</div>
+        <div class="logo"><span class="neo">Neo</span>Cycle</div>
+        <div class="search-icon" onclick="location.href='services.html'">🔍</div>
+    </header>
+
+    <div id="sideMenu" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav(0)">×</a>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>"Scan. <br>Report. <br>Save the Planet."</h1>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="report-box">
+            <h3>Start Your Request</h3>
+            <select id="wasteSelect" class="neo-select">
+                <option value="" disabled selected>Select Waste Category...</option>
+                <option value="Plastic">Plastic Waste</option>
+                <option value="Metal">Metal Waste</option>
+                <option value="Glass">Glass Waste</option>
+                <option value="Food">Food Waste</option>
+                <option value="Handphone">Handphone (E-Waste)</option>
+            </select>
+            <button class="main-btn" onclick="goToLocation()">SCHEDULE PICK UP</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p><strong>NeoCycle Headquarters</strong></p>
+        <p>NMUC City Campus, Jalan Persisiran Perling, Johor Bahru</p>
+        <p>📞 +60 7-238 8888 | 📧 support@neocycle.my</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

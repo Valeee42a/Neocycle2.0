@@ -1,0 +1,25 @@
+:root { --neon: #39FF14; --bg: #0d1117; --panel: #161b22; }
+body { margin: 0; background: var(--bg); color: white; font-family: 'Segoe UI', sans-serif; padding-bottom: 50px; }
+
+.navbar { background: var(--panel); padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--neon); }
+.neo { color: var(--neon); text-shadow: 0 0 10px var(--neon); }
+
+.sidebar { height: 100%; width: 0; position: fixed; z-index: 2000; top: 0; left: 0; background: var(--panel); overflow-x: hidden; transition: 0.5s; padding-top: 60px; border-right: 1px solid var(--neon); }
+.sidebar a { padding: 15px 30px; text-decoration: none; color: var(--neon); display: block; font-size: 1.2rem; }
+.sidebar .closebtn { position: absolute; top: 10px; right: 25px; font-size: 36px; }
+
+.hero { height: 40vh; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=2070&auto=format&fit=crop'); background-size: cover; display: flex; align-items: center; justify-content: center; text-align: center; }
+
+.container { padding: 25px; max-width: 500px; margin: auto; }
+.neo-select { width: 100%; padding: 15px; background: var(--bg); color: var(--neon); border: 1px solid var(--neon); border-radius: 8px; margin-bottom: 20px; }
+.main-btn { width: 100%; padding: 18px; background: var(--neon); color: var(--bg); border: none; font-weight: bold; border-radius: 8px; cursor: pointer; }
+
+.footer { background: var(--panel); padding: 30px 20px; text-align: center; font-size: 0.8rem; color: #8b949e; border-top: 1px solid #30363d; margin-top: 50px; }
+
+.schedule-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+.schedule-table th, .schedule-table td { border: 1px solid #30363d; padding: 12px; text-align: left; }
+.schedule-table th { color: var(--neon); }
+
+.loc-card { background: var(--panel); border: 1px solid #30363d; padding: 15px; border-radius: 12px; display: flex; align-items: center; text-decoration: none; color: white; }
+.dot { color: var(--neon); margin-right: 15px; animation: blink 2s infinite; }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
