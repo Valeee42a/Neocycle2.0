@@ -3,17 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeoCycle | Home</title>
+    <title>NeoCycle | Food Waste Portal</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header class="navbar">
-        <div class="menu-icon" onclick="toggleNav(250)">☰</div>
-        <div class="logo"><span class="neo">Neo</span>Cycle</div>
-        <div class="search-icon" onclick="location.href='services.html'">🔍</div>
-    </header>
-
     <div id="sideMenu" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="toggleNav(0)">×</a>
         <a href="index.html">Home</a>
@@ -21,6 +14,12 @@
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
     </div>
+
+    <header class="navbar">
+        <div class="menu-icon" onclick="toggleNav(250)">☰</div>
+        <div class="logo"><span class="neo">Neo</span>Cycle</div>
+        <div class="search-icon" onclick="window.location.href='services.html'">🔍</div>
+    </header>
 
     <section class="hero">
         <div class="hero-overlay">
@@ -30,26 +29,19 @@
 
     <main class="container">
         <div class="report-box">
-            <h3>Start Your Request</h3>
+            <h3>Food Waste Reporting</h3>
+            <p style="color: #8b949e; font-size: 0.9rem;">Submit your organic waste for daily collection:</p>
             <select id="wasteSelect" class="neo-select">
-                <option value="" disabled selected>Select Waste Category...</option>
-                <option value="Plastic">Plastic Waste</option>
-                <option value="Metal">Metal Waste</option>
-                <option value="Glass">Glass Waste</option>
-                <option value="Food">Food Waste</option>
-                <option value="Handphone">Handphone (E-Waste)</option>
+                <option value="Food" selected>Food Waste (Organic)</option>
             </select>
-            <button class="main-btn" onclick="goToLocation()">SCHEDULE PICK UP</button>
+            <button class="main-btn" onclick="handleStart()">SCHEDULE PICK UP</button>
         </div>
     </main>
 
     <footer class="footer">
         <p><strong>NeoCycle Headquarters</strong></p>
-        <p>Netherlands Maritime University College, City Campus Ibrahim International Business District,
-Level 11-14, Kotaraya Office Tower,
-Galleria@Kotaraya, Jalan Abdullah Ibrahim,
-80888, Johor Bahru</p>
-        <p>📞 +6017-238 2288 | 📧 support@neocycle.my</p>
+        <p>Ibrahim International Business District, Level 11-14, Kotaraya Office Tower Galleria@Kotaraya, Jalan Abdullah Ibrahim, 80888, Johor</p>
+        <p>📞 +6017-342 5566 | 📧 neocycle@gmail.com</p>
     </footer>
 
     <script src="script.js"></script>
