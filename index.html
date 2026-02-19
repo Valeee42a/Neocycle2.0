@@ -3,47 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeoCycle | Future of E-Waste</title>
+    <title>NeoCycle | Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="navbar">
-        <div class="logo">NEO<span>CYCLE</span></div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Safety</a>
-            <a href="#">Contact</a>
-        </nav>
+        <div class="menu-icon" onclick="toggleNav(250)">☰</div>
+        <div class="logo"><span class="neo">Neo</span>Cycle</div>
+        <div class="search-icon" onclick="location.href='services.html'">🔍</div>
     </header>
 
+    <div id="sideMenu" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleNav(0)">×</a>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
     <section class="hero">
-        <div class="hero-text">
-            <h1>Contact NeoCycle</h1>
-            <p>Sustainable Tech Recycling for Johor Bahru</p>
+        <div class="hero-overlay">
+            <h1>"Scan. <br>Report. <br>Save the Planet."</h1>
         </div>
     </section>
 
     <main class="container">
-        <h2>Operating Hours</h2>
-        <div class="divider"></div>
-        <p>Monday — Saturday: <strong>9AM to 6PM</strong></p>
-        <p>Sunday: <strong>Closed</strong></p>
-
-        <h2>Our Location</h2>
-        <div class="divider"></div>
-        <address>
-            Ibrahim International Business District,<br>
-            Level 11-14, Kotaraya Office Tower,<br>
-            Galleria@Kotaraya, Jalan Abdullah Ibrahim,<br>
-            80888, Johor Bahru
-        </address>
-
-        <div class="contact-box">
-            <p>Email: <strong>neocycle@gmail.com</strong></p>
-            <p>Support: <strong>+60 17-123 4567</strong></p>
+        <div class="report-box">
+            <h3>Start Your Request</h3>
+            <select id="wasteSelect" class="neo-select">
+                <option value="" disabled selected>Select Waste Category...</option>
+                <option value="Plastic">Plastic Waste</option>
+                <option value="Metal">Metal Waste</option>
+                <option value="Glass">Glass Waste</option>
+                <option value="Food">Food Waste</option>
+                <option value="Handphone">Handphone (E-Waste)</option>
+            </select>
+            <button class="main-btn" onclick="goToLocation()">SCHEDULE PICK UP</button>
         </div>
     </main>
 
+    <footer class="footer">
+        <p><strong>NeoCycle Headquarters</strong></p>
+        <p>Netherlands Maritime University College, City Campus Ibrahim International Business District,
+Level 11-14, Kotaraya Office Tower,
+Galleria@Kotaraya, Jalan Abdullah Ibrahim,
+80888, Johor Bahru</p>
+        <p>📞 +6017-238 2288 | 📧 support@neocycle.my</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+</html>
 </html>
