@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeoCycle | Home</title>
+    <title>NeoCycle | Food Waste Services</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header class="navbar">
         <div class="menu-icon" onclick="toggleNav(250)">☰</div>
         <div class="logo"><span class="neo">Neo</span>Cycle</div>
-        <div class="search-icon" onclick="location.href='services.html'">🔍</div>
     </header>
-
     <div id="sideMenu" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="toggleNav(0)">×</a>
         <a href="index.html">Home</a>
@@ -22,33 +19,29 @@
         <a href="contact.html">Contact</a>
     </div>
 
-    <section class="hero">
-        <div class="hero-overlay">
-            <h1>"Scan. <br>Report. <br>Save the Planet."</h1>
-        </div>
-    </section>
-
     <main class="container">
-        <div class="report-box">
-            <h3>Start Your Request</h3>
-            <select id="wasteSelect" class="neo-select">
-                <option value="" disabled selected>Select Waste Category...</option>
-                <option value="Plastic">Plastic Waste</option>
-                <option value="Metal">Metal Waste</option>
-                <option value="Glass">Glass Waste</option>
-                <option value="Food">Food Waste</option>
-                <option value="Handphone">Handphone (E-Waste)</option>
-            </select>
-            <button class="main-btn" onclick="goToLocation()">SCHEDULE PICK UP</button>
-        </div>
+        <h2 class="neo">Daily Organic Services</h2>
+        <table class="service-table">
+            <thead>
+                <tr><th>Waste Type</th><th>Collection Time</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Residential Food Waste</td><td>Daily (7:00 AM - 10:00 AM)</td></tr>
+                <tr><td>Commercial/Restaurant</td><td>Nightly (11:00 PM - 1:00 AM)</td></tr>
+            </tbody>
+        </table>
+
+        <h2 class="neo" style="margin-top: 30px;">Organic Collection Hubs</h2>
+        <a href="https://www.google.com/maps/search/Larkin+Sentral+Johor+Bahru0" target="_blank" class="loc-card">
+            <span class="dot">●</span>
+            <div><strong>Pasar Karat Collection Point</strong><p>Jalan Segget, JB (Central Hub)</p></div>
+            <div class="arrow">➔</div>
+        </a>
     </main>
 
     <footer class="footer">
-        <p><strong>NeoCycle Headquarters</strong></p>
-        <p>NMUC City Campus, Jalan Persisiran Perling, Johor Bahru</p>
-        <p>📞 +60 7-238 8888 | 📧 support@neocycle.my</p>
+        <p>Ibrahim International Business District, Level 11-14, Kotaraya Office Tower Galleria@Kotaraya, Jalan Abdullah Ibrahim, 80888, Johor</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
