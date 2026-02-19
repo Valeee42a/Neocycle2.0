@@ -2,11 +2,11 @@ function toggleNav(width) {
     document.getElementById("sideMenu").style.width = width + "px";
 }
 
-function goToLocation() {
+function goToServices() {
     const waste = document.getElementById("wasteSelect").value;
     if (waste) {
-        alert("Analyzing pickup zones for " + waste + "...");
-        window.location.href = "services.html"; // Takes them to the next page
+        // This takes the user to the unique Services page
+        window.location.href = "services.html";
     } else {
         alert("Please select a waste category first.");
     }
