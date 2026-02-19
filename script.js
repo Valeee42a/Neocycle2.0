@@ -2,12 +2,8 @@ function toggleNav(width) {
     document.getElementById("sideMenu").style.width = width + "px";
 }
 
-function goToServices() {
+function handleStart() {
     const waste = document.getElementById("wasteSelect").value;
-    if (waste) {
-        // This takes the user to the unique Services page
-        window.location.href = "services.html";
-    } else {
-        alert("Please select a waste category first.");
-    }
+    alert("Initiating Food Waste pickup protocol for Johor Bahru Central...");
+    window.location.href = "services.html";
 }
